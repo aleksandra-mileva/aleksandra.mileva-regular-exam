@@ -46,7 +46,7 @@ jobs:
       run: npm run test:ui
   deploy-prd:
     runs-on: ubuntu-latest
-    needs: run-ui-tests
+    needs: ui-tests
     steps:
       - name: Deploy to production
         uses: johnbeynon/render-deploy-action@v0.0.8
